@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.wrapper{
+    display: flex;
+
+}
+.wrapper .first-text{
+    font-size: 60px;
+    color:aliceblue;
+
+}
+.wrapper .sec-texts{
+    height: 80px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.sec-texts li{
+    position: relative;
+    top: 0;
+    font-size: 50px;
+    color: #0ef;
+    list-style: none;
+    padding:0 20px;
+    text-shadow: 0 0 10px #0ef;
+animation: slide 12s steps(4) infinite,colorful 6s infinite;
+}
+@keyframes slide{
+    100%{
+        top: -360px ;
+    }
+}
+@keyframes colorful{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.sec-texts li span{
+    position: relative;
+}
+.sec-texts li span::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 300px;
+    height: 80px;
+    background: black;
+border-left: 2px solid #0ef;
+animation:typing 1.5s steps(10) infinite alternate;
+
+}
+@keyframes typing{
+    100%{
+        left:100%;
+        margin: 0 -35px 0 35px;
+        }
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration:double;
+    font-weight: 600;
+}
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+.navbar a:hover,.navbar a.active
+{
+    color: #00abf0;
+}
