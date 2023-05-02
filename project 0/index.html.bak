@@ -1,0 +1,6 @@
+
+<frameset rows="25%,10%,*" border="0">
+	<frame src="head.html">
+	<frame src="menu.html">
+	<frame src="content.html">
+</frameset>

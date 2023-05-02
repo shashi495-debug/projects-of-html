@@ -1,0 +1,27 @@
+
+<html>
+	<head> </head>
+	<body>
+		<table align="center" border="0">
+			<tr>
+				<td rowspan="3"> <img src="images/admin.png" width="150" height="150"> </td>
+				<td>
+				<input type="text" placeholder="Username">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+			<input type="password" placeholder="Password">
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="Submit" value="Login">
+				</td>
+			</tr>
+
+		</table>
+	</body>
+</html>
